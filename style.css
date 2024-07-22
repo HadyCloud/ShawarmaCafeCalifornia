@@ -176,6 +176,8 @@ html {
 }
 
 body {
+  margin: 0;
+  font-family: Arial, sans-serif;
   background-color: var(--eerie-black-1);
   color: var(--white);
   font-family: var(--fontFamily-dm_sans);
@@ -1441,6 +1443,33 @@ textarea.input-field {
 /**
  * responsive for larger than 575px screen
  */
+ @media (max-width: 1200px) {
+  .container {
+    padding: 20px;
+  }
+  .your-class {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 10px;
+  }
+  .your-class {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 5px;
+  }
+  .your-class {
+    font-size: 14px;
+  }
+}
+
 
 @media (min-width: 575px) {
 
@@ -2152,4 +2181,32 @@ textarea.input-field {
   margin-top: 10px; /* Adjust as needed */
   font-size: 1.5rem; /* Adjust font size as needed */
   color: #333; /* Adjust color as needed */
+}
+
+/* Flexbox and Grid compatibility for Safari */
+.container {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+}
+
+.grid-container {
+  display: -webkit-grid;
+  display: grid;
+  -webkit-grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+}
+
+/* Safari-specific fixes */
+@supports (-webkit-overflow-scrolling: touch) {
+  .your-class {
+    /* Add Safari-specific styles */
+  }
+}
+
+/* Responsive images and media */
+img, video, iframe {
+  max-width: 100%;
+  height: auto;
 }
