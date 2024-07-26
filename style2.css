@@ -2,29 +2,22 @@
 /* Shared settings for all menu sections */
 .menu-section {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 1rem; /* Adjust the gap for better spacing */
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1rem; /* Adjust this gap as necessary */
   margin-bottom: 2rem; /* Space between sections */
-  width: 100%; /* Ensure full width of the container */
-  max-width: 1200px; /* Optional: limit the max width */
-  margin-left: auto;
-  margin-right: auto;
 }
 
 /* Adjustments for menu items */
 .menu-card {
   margin-bottom: 1rem;
   padding: 0.5rem;
-  background-color: #fff; /* Ensure a background color for visibility */
-  border-radius: 8px; /* Add some rounding for better visuals */
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: add a subtle shadow */
 }
 
 /* Media queries for responsiveness */
 @media (max-width: 768px) {
   .menu-section {
-    grid-template-columns: 1fr; /* Single column layout for small screens */
-    gap: 0.5rem; /* Reduce gap for small screens */
+    grid-template-columns: 1fr;
+    gap: 0.5rem;
   }
 
   .menu-card {
@@ -126,7 +119,7 @@
    * SPACING
    */
 
-  --section-space: 300px;
+  --section-space: 290px;
 
   /**
    * SHADOW
