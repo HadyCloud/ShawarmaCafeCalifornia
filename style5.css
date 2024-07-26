@@ -1,3 +1,54 @@
+
+/* Shared settings for all menu sections */
+.menu-section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem; /* Increase the gap for better spacing */
+  margin-bottom: 4rem; /* Increase space between sections */
+  width: 100%; /* Ensure full width of the container */
+  max-width: 1200px; /* Optional: limit the max width */
+  margin-left: auto;
+  margin-right: auto;
+  min-height: 400px; /* Ensure minimum height for the section */
+}
+
+/* Adjustments for menu items */
+.menu-card {
+  margin-bottom: 1.8rem; /* Increase bottom margin for more space */
+  padding: 1.8rem; /* Increase padding for more space inside the card */
+  border-radius: 8px; /* Add some rounding for better visuals */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: add a subtle shadow */
+  min-height: 300px; /* Ensure minimum height for the card for more content space */
+  background-color: transparent; /* Remove the white background color */
+}
+
+/* Specific adjustments for Qesadilla item */
+.menu-card-quesadilla {
+  margin-bottom: 2.7rem; /* Increase bottom margin by 50% */
+  padding: 2.7rem; /* Increase padding by 50% */
+  min-height: 375px; /* Increase minimum height by 50% */
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+  .menu-section {
+    grid-template-columns: 1fr; /* Single column layout for small screens */
+    gap: 1rem; /* Adjust gap for small screens */
+  }
+
+  .menu-card {
+    margin-bottom: 1.2rem; /* Adjust bottom margin for small screens */
+    padding: 1.2rem; /* Ensure consistent padding */
+  }
+
+  .menu-card-quesadilla {
+    margin-bottom: 1.8rem; /* Adjust bottom margin for small screens */
+    padding: 1.8rem; /* Ensure consistent padding */
+    min-height: 275px; /* Adjust minimum height for small screens */
+  }
+}
+
+/* Other existing styles from the original CSS */
 /*-----------------------------------*\
   #index.css
 \*-----------------------------------*/
@@ -90,7 +141,7 @@
    * SPACING
    */
 
-  --section-space: 275px;
+  --section-space: 300px;
 
   /**
    * SHADOW
