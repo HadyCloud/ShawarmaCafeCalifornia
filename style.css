@@ -3,7 +3,7 @@
 .menu-section {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 1rem; /* Adjust the gap for better spacing */
+  gap: 1.5rem; /* Increase the gap for better spacing */
   margin-bottom: 2rem; /* Space between sections */
   width: 100%; /* Ensure full width of the container */
   max-width: 1200px; /* Optional: limit the max width */
@@ -13,23 +13,23 @@
 
 /* Adjustments for menu items */
 .menu-card {
-  margin-bottom: 1rem;
-  padding: 1rem; /* Increase padding for more space inside the card */
-  background-color: #fff; /* Ensure a background color for visibility */
+  margin-bottom: 1.5rem; /* Increase bottom margin for more space */
+  padding: 1.5rem; /* Increase padding for more space inside the card */
   border-radius: 8px; /* Add some rounding for better visuals */
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: add a subtle shadow */
-  min-height: 200px; /* Ensure minimum height for the card */
+  min-height: 250px; /* Ensure minimum height for the card for more content space */
+  background-color: transparent; /* Remove the white background color */
 }
 
 /* Media queries for responsiveness */
 @media (max-width: 768px) {
   .menu-section {
     grid-template-columns: 1fr; /* Single column layout for small screens */
-    gap: 0.5rem; /* Reduce gap for small screens */
+    gap: 1rem; /* Adjust gap for small screens */
   }
 
   .menu-card {
-    margin-bottom: 0.5rem;
+    margin-bottom: 1rem; /* Adjust bottom margin for small screens */
     padding: 1rem; /* Ensure consistent padding */
   }
 }
