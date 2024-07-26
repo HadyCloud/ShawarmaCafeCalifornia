@@ -22,6 +22,13 @@
   background-color: transparent; /* Remove the white background color */
 }
 
+/* Specific adjustments for Qesadilla item */
+.menu-card-quesadilla {
+  margin-bottom: 2.7rem; /* Increase bottom margin by 50% */
+  padding: 2.7rem; /* Increase padding by 50% */
+  min-height: 375px; /* Increase minimum height by 50% */
+}
+
 /* Media queries for responsiveness */
 @media (max-width: 768px) {
   .menu-section {
@@ -32,6 +39,12 @@
   .menu-card {
     margin-bottom: 1.2rem; /* Adjust bottom margin for small screens */
     padding: 1.2rem; /* Ensure consistent padding */
+  }
+
+  .menu-card-quesadilla {
+    margin-bottom: 1.8rem; /* Adjust bottom margin for small screens */
+    padding: 1.8rem; /* Ensure consistent padding */
+    min-height: 275px; /* Adjust minimum height for small screens */
   }
 }
 
@@ -128,7 +141,7 @@
    * SPACING
    */
 
-  --section-space: 300px;
+  --section-space: 275px;
 
   /**
    * SHADOW

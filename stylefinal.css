@@ -14,11 +14,11 @@
 
 /* Adjustments for menu items */
 .menu-card {
-  margin-bottom: 1.5rem; /* Increase bottom margin for more space */
-  padding: 1.5rem; /* Increase padding for more space inside the card */
+  margin-bottom: 1.8rem; /* Increase bottom margin for more space */
+  padding: 1.8rem; /* Increase padding for more space inside the card */
   border-radius: 8px; /* Add some rounding for better visuals */
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: add a subtle shadow */
-  min-height: 250px; /* Ensure minimum height for the card for more content space */
+  min-height: 300px; /* Ensure minimum height for the card for more content space */
   background-color: transparent; /* Remove the white background color */
 }
 
@@ -30,8 +30,8 @@
   }
 
   .menu-card {
-    margin-bottom: 1rem; /* Adjust bottom margin for small screens */
-    padding: 1rem; /* Ensure consistent padding */
+    margin-bottom: 1.2rem; /* Adjust bottom margin for small screens */
+    padding: 1.2rem; /* Ensure consistent padding */
   }
 }
 
