@@ -1,26 +1,28 @@
 
-/* Adjusting spacing for menu items */
-.menu-card {
-  margin-bottom: 0.5rem; /* Reduce bottom margin */
-  padding: 0.5rem; /* Reduce padding */
-}
-
-.grid-list {
+/* Shared settings for all menu sections */
+.menu-section {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  gap: 0.5rem; /* Reduce grid gap */
+  gap: 1rem; /* Adjust this gap as necessary */
+  margin-bottom: 2rem; /* Space between sections */
+}
+
+/* Adjustments for menu items */
+.menu-card {
+  margin-bottom: 1rem;
+  padding: 0.5rem;
 }
 
 /* Media queries for responsiveness */
 @media (max-width: 768px) {
+  .menu-section {
+    grid-template-columns: 1fr;
+    gap: 0.5rem;
+  }
+
   .menu-card {
     margin-bottom: 0.5rem;
     padding: 0.5rem;
-  }
-
-  .grid-list {
-    grid-template-columns: 1fr; /* Single column layout for small screens */
-    gap: 0.5rem;
   }
 }
 
@@ -117,7 +119,7 @@
    * SPACING
    */
 
-  --section-space: 300px;
+  --section-space: 290px;
 
   /**
    * SHADOW
