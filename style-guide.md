@@ -87,7 +87,7 @@ Ionicon
 ## Spacing
 
 ``` css
---section-space: 250px;
+--section-space: 300px;
 ```
 
 ## Shadow
