@@ -401,7 +401,6 @@ body.nav-active { overflow: hidden; }
 
 .section {
   position: relative;
-  padding-block: var(--section-space);
   overflow: hidden;
   z-index: 1;
 }
