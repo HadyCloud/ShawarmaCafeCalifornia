@@ -965,7 +965,7 @@ body.nav-active { overflow: hidden; }
   margin-block-end: 120px;
 }
 
-.about-banner > .w-100 { padding-inline-start: 50px; }
+.about-banner > .w-100 { padding-inline-start: 10px; }
 
 .about .abs-img { position: absolute; }
 
@@ -1743,7 +1743,7 @@ textarea.input-field {
      * spacing
      */
 
-    --section-space: 100px;
+    --section-space: 30px;
 
   }
 
