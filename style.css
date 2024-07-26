@@ -282,7 +282,7 @@ body.nav-active { overflow: hidden; }
 }
 
 .hover-underline {
-  position: relative;
+  position: absolute;
   max-width: max-content;
 }
 
@@ -1187,7 +1187,7 @@ body.nav-active { overflow: hidden; }
   line-height: var(--lineHeight-3);
 }
 
-.form-right .body-4:not(:last-child) { margin-block-end: 25px; }
+.form-right .body-4:not(:last-child) { margin-block-end: 0%; }
 
 .form-left,
 .form-right { padding: 40px 20px 30px; }
