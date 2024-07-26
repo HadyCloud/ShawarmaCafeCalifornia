@@ -90,7 +90,7 @@
    * SPACING
    */
 
-  --section-space: 300px;
+  --section-space: 275px;
 
   /**
    * SHADOW
@@ -127,7 +127,7 @@
 *::before,
 *::after {
   margin: revert;
-  padding: 0;
+  padding: revert;
   box-sizing: border-box;
 }
 
@@ -306,7 +306,7 @@ body.nav-active { overflow: hidden; }
 
 .contact-number::after { bottom: -5px; }
 
-.text-center { text-align: center; }
+.text-center { text-align: -webkit-auto; }
 
 .img-cover {
   height: 100%;
