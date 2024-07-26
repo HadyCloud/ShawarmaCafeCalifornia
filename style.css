@@ -14,10 +14,11 @@
 /* Adjustments for menu items */
 .menu-card {
   margin-bottom: 1rem;
-  padding: 0.5rem;
+  padding: 1rem; /* Increase padding for more space inside the card */
   background-color: #fff; /* Ensure a background color for visibility */
   border-radius: 8px; /* Add some rounding for better visuals */
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: add a subtle shadow */
+  min-height: 200px; /* Ensure minimum height for the card */
 }
 
 /* Media queries for responsiveness */
@@ -29,7 +30,7 @@
 
   .menu-card {
     margin-bottom: 0.5rem;
-    padding: 0.5rem;
+    padding: 1rem; /* Ensure consistent padding */
   }
 }
 
@@ -126,7 +127,7 @@
    * SPACING
    */
 
-  --section-space: 300px;
+  --section-space: 295px;
 
   /**
    * SHADOW
