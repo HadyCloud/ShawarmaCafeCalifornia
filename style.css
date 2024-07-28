@@ -2004,7 +2004,7 @@ textarea.input-field {
    * SERVICE
    */
 
-  .service .grid-list {  }
+  .service .grid-list { gap: 150px; }
 
   .service .grid-list li:nth-child(2n+1) { transform: translateY(-160px); }
 
